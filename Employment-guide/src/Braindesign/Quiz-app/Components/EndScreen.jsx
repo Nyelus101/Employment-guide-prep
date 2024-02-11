@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { QuizContext } from '../Helpers/Contexts'
 //import { Questions } from '../Helpers/QuestionBank';
-import "../App.css";
+//import "../App.css";
 import Scoreboard from './Scoreboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

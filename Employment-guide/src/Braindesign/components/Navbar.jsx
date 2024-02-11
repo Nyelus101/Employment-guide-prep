@@ -29,7 +29,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
+            FBN-prep
             <i className='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -66,11 +66,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                SignUp/Login
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>SIGN UP/LOGIN</Button>}
         </div>
       </nav>
     </>
@@ -78,3 +78,28 @@ function Navbar() {
 }
 
 export default Navbar;
+
+/*import React from 'react';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+
+function Navbar1() {
+  return (
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar.Brand href="#home">Your Brand Name</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#link">About</Nav.Link>
+          <Nav.Link href="#link">Services</Nav.Link>
+        </Nav>
+        <Nav>
+          <Button variant="outline-light" className="mx-2">Login</Button>
+          <Button variant="outline-light">Sign Up</Button>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+}
+
+export default Navbar1;*/

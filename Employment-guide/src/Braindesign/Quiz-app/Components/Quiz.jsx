@@ -5,7 +5,7 @@ import { QuizContext } from '../Helpers/Contexts';
 //import TimeUp from './TimeUp';
 //import AnswerTimer from './AnswerTimer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../App.css";
+//import "../App.css";
 
 function Quiz() {
 

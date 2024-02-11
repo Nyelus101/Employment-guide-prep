@@ -9,7 +9,7 @@ function Signup() {
             <form>
                 <h3 className='text-center'>Sign Up</h3>
                 <div className='mb-2'>
-                    <label htmlFor="fname">Fast Name</label>
+                    <label htmlFor="fname">First Name</label>
                     <input type="text" placeholder='Enter First Name' className='form-control' />
                 </div>
                 <div className='mb-2'>

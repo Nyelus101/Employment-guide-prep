@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { QuizContext } from '../Helpers/Contexts'
-import "../App.css";
+//import "../App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function MainMenu() {

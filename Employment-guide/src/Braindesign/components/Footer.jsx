@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Join the FBN-prep newsletter to receive our best job info
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -32,7 +32,7 @@ function Footer() {
             <Link to='/sign-up'>How it works</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
+            {/*<Link to='/'>Investors</Link>*/}
             <Link to='/'>Terms of Service</Link>
           </div>
           <div className='footer-link-items'>
@@ -49,7 +49,7 @@ function Footer() {
             <Link to='/'>Submit Video</Link>
             <Link to='/'>Ambassadors</Link>
             <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <Link to='/'>Study Materials</Link>
           </div>
           <div className='footer-link-items'>
             <h2>Social Media</h2>
@@ -64,11 +64,11 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
+              FBN-prep
               <i className='fab fa-typo3' />
             </Link>
           </div>
-          <small className='website-rights'>TRVL © 2020</small>
+          <small className='website-rights'>FBN-prep © 2024</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
