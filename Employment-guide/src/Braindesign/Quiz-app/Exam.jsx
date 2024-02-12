@@ -5,7 +5,7 @@ import EndScreen from './Components/EndScreen';
 //import './App.css'
 import { QuizContext } from './Helpers/Contexts';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter } from "react-router-dom";
 
 function Exam() {
   const [gameState, setGameState] = useState("menu");
@@ -17,12 +17,22 @@ function Exam() {
 
   return (
     <>
+      <div style={{ 
+      backgroundImage: 'url("path/to/your/image.jpg")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',  
+    }}>
         <h1>Quiz App</h1>
         <QuizContext.Provider value={{ gameState, setGameState, score, setScore, questions, setQuestions, useTimer, setUseTimer, timer, setTimer, counter, setCounter }}>
           {gameState === "menu" && <MainMenu />}
           {gameState === "quiz" && <Quiz />}
           {gameState === "endScreen" && <EndScreen />}
         </QuizContext.Provider>
+      </div>
     </>
   )
 }

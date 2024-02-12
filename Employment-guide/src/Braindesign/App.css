@@ -17,7 +17,8 @@
 }
 
 .services {
-  background-image: url('/images/img-2.jpg');
+  /*background-image: url('/images/img-2.jpg');*/
+  background-color: red;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

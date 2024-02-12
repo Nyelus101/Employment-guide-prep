@@ -5,7 +5,7 @@ import Exam from '../../Quiz-app/Exam.jsx';
 export default function Services() {
   return (
     <>
-      <Exam className='services'/>
+      <Exam />
       {/*<h1 className='services'>SERVICES</h1>*/}
     </>
   );
