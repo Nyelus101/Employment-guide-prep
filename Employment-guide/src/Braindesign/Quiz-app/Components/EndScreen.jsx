@@ -20,7 +20,7 @@ function EndScreen() {
       <h2>Quiz finished</h2>
       <h3> Result: {score} / {questions.length} </h3>
       <button onClick={restartQuiz}>Restart Quiz</button>
-      <Scoreboard />
+      {/*<Scoreboard />*/}
     </div>
   )
 }

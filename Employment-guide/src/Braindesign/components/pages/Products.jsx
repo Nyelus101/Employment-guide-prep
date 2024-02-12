@@ -1,6 +1,12 @@
 import React from 'react';
 import '../../App.css';
+import Scoreboard from '../../Quiz-app/Components/Scoreboard';
 
 export default function Products() {
-  return <h1 className='products'>PRODUCTS</h1>;
+  return (
+    <>
+      <Scoreboard />
+      <h1 className='products'>PRODUCTS</h1>
+    </>
+  );
 }
