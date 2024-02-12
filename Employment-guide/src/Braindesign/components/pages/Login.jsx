@@ -24,7 +24,7 @@ function Login() {
                     <label htmlFor="check" className='custom-input-label ms-2'>Remember me</label>
                 </div>
                 <div className='d-grid'>
-                <Link to='/'><button className='btn btn-primary'>Sign in</button></Link>
+                <Link to='/'><button className='btn btn-primary'>Login</button></Link>
                 </div>
                 <p className='text-end mt-2'>
                     Forgot <a href="">Password?</a><Link to='/sign-up' className='ms-2'>SignUp</Link>

@@ -8,7 +8,7 @@ export default function SignUp() {
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Navbar, Nav, Container } from 'react-bootstrap';
+//import { Button, Navbar, Nav, Container } from 'react-bootstrap';
 import Login from './Login.jsx';
 
 
@@ -37,7 +37,7 @@ function SignUp() {
                 </div>
                 <p className='text-end mt-2'>
                     Already Registered <Link to='/login' className='ms-2'>Login</Link>
-                </p>
+  </p>
             </form>
         </div>
     </div>
