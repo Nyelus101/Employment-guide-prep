@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { resultInitalState } from "./constants";
+import Result from "./Results/Result";
 
 const Quiz = ({ questions }) => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [answerIdx, setAnswerIdx] = useState(null);
     const [answer, setAnswer] = useState(null);
+    const [result, setResult] = useState(resultInitalState);
+    const [showResult, setShowResult] = useState(false);
 
     const {question, choices, correctAnswer} = questions[currentQuestion];
 
@@ -17,14 +21,31 @@ const Quiz = ({ questions }) => {
     }
 
     const onClickNext = () => {
-        
-    }
+        setAnswerIdx(null);
+        setResult((prev) => answer ? {...prev, score: prev.score + 5, correctAnswers: prev.correctAnswers + 1, 
+        } 
+        : {
+            ...prev, wrongAnswers: prev.wrongAnswers + 1,
+        }
+        );
 
+        if (currentQuestion !== questions.length - 1) {
+            setCurrentQuestion((prev) => prev + 1);
+        } else {
+            setCurrentQuestion(0);
+            setShowResult(true);
+        }
+    };
+
+    const onTryAgain = () => {
+        setResult(resultInitalState);
+        setShowResult(false);
+    };
 
     return (
         <div className="quiz-container">
             <div className="quiz-container2">
-            <>
+                {!showResult ? (<>
                 <span className="active-question-no">{currentQuestion + 1}</span>
                 <span className="total-question">/{questions.length}</span>
                 <h2>{question}</h2>
@@ -46,7 +67,14 @@ const Quiz = ({ questions }) => {
                         {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
                     </button>
                 </div>
-            </>
+            </>) : (
+              <Result 
+                result={result}
+                onTryAgain={onTryAgain}
+                totalQuestions={questions.length}
+              />
+            )}
+            
             </div>
         </div>
     );
