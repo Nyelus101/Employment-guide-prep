@@ -101,7 +101,7 @@ function Services() {
   }
 
   return (
-    <>
+    <div className="d-flex justify-content-center align-items-center vh-100">
       {values.map((v, idx) => (
         <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
           Click to Start Quiz
@@ -116,7 +116,7 @@ function Services() {
           <QuizApp />
         </Modal.Body>
       </Modal>
-    </>
+    </div>
   );
 }
 
