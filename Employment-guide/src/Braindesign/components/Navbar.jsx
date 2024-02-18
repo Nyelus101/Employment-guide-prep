@@ -149,6 +149,15 @@ function Navbar() {
                 Products
               </Link>
             </li>
+            {/* <li className='nav-item'>
+              <Link
+                to='/sign-out'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                SignOut
+              </Link>
+            </li> */}
 
             <li>
               <Link
