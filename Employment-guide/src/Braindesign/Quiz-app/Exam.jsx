@@ -24,9 +24,9 @@ function Exam() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh',  
+      height: '50vh',  
     }}>
-        <h1>Quiz App</h1>
+        {/* <h1>Quiz App</h1> */}
         <QuizContext.Provider value={{ gameState, setGameState, score, setScore, questions, setQuestions, useTimer, setUseTimer, timer, setTimer, counter, setCounter }}>
           {gameState === "menu" && <MainMenu />}
           {gameState === "quiz" && <Quiz />}

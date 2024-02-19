@@ -7,7 +7,7 @@ import { UserProvider } from './UserContext.jsx';
 
 
 function MainComponent() {
-  const [isUserSignedIn, setIsUserSignedIn] = useState(false); // Initialize state variable
+  const [isUserSignedIn, setIsUserSignedIn] = useState(true); // Initialize state variable
 
   return (
     <React.StrictMode>

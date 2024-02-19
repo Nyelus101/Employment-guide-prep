@@ -113,7 +113,7 @@ function Services() {
           <Modal.Title>THE SECP QUIZ</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <QuizApp />
+          <Exam />
         </Modal.Body>
       </Modal>
     </div>
