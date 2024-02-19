@@ -7,7 +7,6 @@ export default function MainMenu() {
   const { gameState, setGameState, useTimer, setUseTimer, timer, setTimer } = useContext(QuizContext);
   return (
     <div className='quiz-container'>
-      {/* <video src='/videos/video-2.mp4' autoPlay loop muted /> */}
       <div className='quiz-container2'>
         <button onClick={() => {setGameState("quiz");}}>Start Quiz</button>
         <label>

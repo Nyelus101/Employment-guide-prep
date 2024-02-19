@@ -42,11 +42,11 @@ function SignoutPage() {
                                     </label>
                                 </div>
                       
-                                <input type="submit" className="butt" value="Sign Up" />
+                                <input type="submit" className="butt" value="Sign Up" onSubmit={handleSignIn}/>
                                 {/* <Link to="/">SignUp/Login</Link> */}
                                 
                             </form>
-                            <button onClick={handleSignIn}>Login Boss</button>
+                            {/* <button onClick={handleSignIn}>Login Boss</button> */}
                         </div>
                         
                     </div>
