@@ -11,8 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import { Button, Navbar, Nav, Container } from 'react-bootstrap';
 import Login from './Login.jsx';
 
-
-
 function SignUp() {
   return (
     <div className='signup template d-flex justify-content-center align-items-center vh-100 bg-primary'>
